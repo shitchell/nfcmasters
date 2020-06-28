@@ -73,22 +73,50 @@
         </a></li>
     </ul>
 
-    <main class="container color-primary z-depth-2">
-        <section class="section" id="contact">
-            <h3 class="header">contact us</h3>
+    <main class="container color-primary-translucent z-depth-2">
+        <div class="row center">
+            <div class="col s12">
+                <h5 class="header">contact me</h5>
+                <p>what&#039;s on your mind?</p>
+            </div>
+
+            <form id="contact-form" action="https://api.shitchell.com/mail" class="col m8 offset-m2 s12">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input id="contact-name" name="name" type="text" />
+                        <label for="contact-name">Name</label>
+                    </div>
+                    
+                    <div class="input-field col s12 m6">
+                        <input id="contact-email" name="from" type="email" class="validate" required />
+                        <label for="contact-email">Email *</label>
+<!--
+                        <span class="helper-text" data-error="invalid email"></span>
+                    -->
+                </div>
+
+                <div class="input-field col s12">
+                    <input id="contact-subject" name="subject" type="text" />
+                    <label for="contact-subject">Subject</label>
+                </div>
+
+                <div class="input-field col s12">
+                    <textarea id="contact-message" name="msg" class="materialize-textarea validate" required></textarea>
+                    <label for="contact-message">Message *</label>
+                </div>
+            </div>
 
             <div class="row">
-                <p>Feel free to drop us a line!</p>
-                <ul class="collection col l4 m6 s12 black-text">
-                    <li class="collection-item">
-                        Phone: 555.555.5555
-                    </li>
-                    <li class="collection-item">
-                        Email: <span class="email rot13" data-inner="uryyb@aspznfgref.pbz"></span>
-                    </li>
-                </ul>
-            </div>
-        </section>
+                <div class="col s12">
+                    <button name="submit" class="waves-effect waves-light btn" type="submit">Send</a>
+                    </div>
+                </div>
+
+                <input type="hidden" id="contact-recipient" name="to" value="4" />
+                <input type="hidden" id="contact-url" name="url" value="sandyali.com" />
+            </form>
+        </div>
+        <script src="js/contact.js?8"></script>
     </main>
 
     <footer>NFCmasters &copy; 2020</footer>

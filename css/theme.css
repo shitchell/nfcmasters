@@ -1,0 +1,31 @@
+.color-void {
+	background-color: #F5F5F6;
+}
+.color-primary {
+	background-color: rgba(0, 100, 100, 0.3);
+}
+.color-primary-dark {
+	background-color: #000;
+}
+.color-primary-light {
+	background-color: #555150;
+}
+.color-secondary {
+	background-color: #00bf9b;
+}
+.color-secondary-dark {
+	background-color: #008e6d;
+}
+.color-secondary-light {
+	background-color: #5cf2cc;
+}
+.color-primary, .color-primary-dark, .color-primary-light {
+	color: #FFF;
+}
+.color-secondary, .color-secondary-dark. .color-secondary-light {
+	color: #000;
+}
+
+nav {
+	background-color: none !important;
+}

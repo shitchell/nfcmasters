@@ -64,3 +64,8 @@ footer a:hover, footer a.dark:hover {
 .email {
 	color: #FFF;
 }
+
+#nav-mobile .background {
+	background: url(img/abstract-bg.jpg);
+	background-size: cover;
+}

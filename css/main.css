@@ -65,7 +65,11 @@ footer a:hover, footer a.dark:hover {
 	color: #FFF;
 }
 
-#nav-mobile .background {
+.sidenav .background {
 	background: url(img/abstract-bg.jpg);
 	background-size: cover;
+}
+
+.collection {
+	border: 0;
 }

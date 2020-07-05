@@ -19,20 +19,21 @@
 .color-secondary-light {
 	background-color: #5cf2cc;
 }
-.color-primary, .color-primary-dark, .color-primary-light {
+.color-primary, .color-primary-dark, .color-secondary-dark {
 	color: #FFF;
 }
-.color-secondary, .color-secondary-dark, .color-secondary-light {
+.color-secondary, .color-primary-light, .color-secondary-light {
 	color: #000;
 }
 
-.color-primary a, .color-primary-dark a, .color-primary-light a {
+.color-primary a, .color-primary-dark a, .color-secondary-dark a {
 	color: #FFF;
-	text-decoration: underline;
-
 }
-.color-secondary a, .color-secondary-dark a, .color-secondary-light a {
+.color-secondary a, .color-primary-light a, .color-secondary-light a {
 	color: #000;
+}
+
+main a {
 	text-decoration: underline;
 }
 

@@ -1,75 +1,158 @@
 <!doctype html>
 <html>
-	<head>
-		<title>Web Tech - Fall 2019</title>
-		<link rel="icon" href="//cdn.shitchell.com/img/shitchell.png" type="image/png" />
+<head>
+	<title>NFCmasters</title>
+	<link rel="icon" href="img/pm-logo.png" type="image/png" />
 
-        <!-- Materialize -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
-	    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-	    
-        <!-- JQuery -->
-        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Materialize -->
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-		<!-- Transit -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
-		
-		<!-- Custom CSS -->
-		<link href="css/main.css?12" rel="stylesheet" />
-		<link href="css/theme.css?2" rel="stylesheet" />
-		<link href="css/particles.css?1" rel="stylesheet" />
+	<!-- JQuery -->
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
-		<!-- Custom JS -->
-		<script src="js/main.js?4"></script>
-				
-		<meta charset="utf-8" />
-		<meta name="generator" content="shitchell" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	</head>
+	<!-- Transit -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.transit/0.9.12/jquery.transit.min.js"></script>
+
+	<!-- Custom CSS -->
+	<link href="css/main.css?22" rel="stylesheet" />
+	<link href="css/theme.css?2" rel="stylesheet" />
+	<link href="css/particles.css?1" rel="stylesheet" />
+
+	<!-- Custom JS -->
+	<script src="js/main.js?5"></script>
+	<script src="js/rot.js?6"></script>
+
+	<meta charset="utf-8" />
+	<meta name="generator" content="shitchell" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
 <body>
 
 	<!-- particles.js container -->
 	<div id="particles-js"></div>
-	
-    <header>
-        <div class="navbar-fixed">
-            <nav class="color-primary-dark row">
-                <div class="nav-wrapper col s12">
-                    <span href="#" class="brand-logo noselect center"><b>nfc</b>masters</span>
-                    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-                    <ul class="right hide-on-med-and-down">
-                        <li><a href="index">home</a></li>
-                        <li><a href="about">about</a></li>
-                        <li><a href="contact">contact</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </header>
+
+	<header>
+		<div class="navbar-fixed">
+			<nav class="color-primary-dark row">
+				<div class="nav-wrapper col s12">
+					<span href="#" class="brand-logo noselect center"><b>nfc</b>masters</span>
+					<a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+					<ul class="right hide-on-med-and-down">
+						<li><a href="index">home</a></li>
+						<li><a href="about">about</a></li>
+						<li><a href="contact">contact</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+	<ul class="sidenav" id="nav-mobile">
+		<li>
+			<div class="user-view white-text">
+				<div class="background"></div>
+				<img class="circle" src="img/pm-logo.png">
+				<span class="name">NFCmasters</span>
+				<a class="rot13" target="_blank" data-href="znvygb:uryyb@aspznfgref.pbz">
+					<span class="email rot13" data-inner="uryyb@aspznfgref.pbz"></span>
+				</a>
+			</div>
+		</li>
+
+		<!-- Navigation links -->
+		<li><a class="waves-effect" href="index">
+			<i class="material-icons left">home</i>Home
+		</a></li>
+		<li><a class="waves-effect" href="about">
+			<i class="material-icons left">info</i>About
+		</a></li>
+		<li><a class="waves-effect" href="contact">
+			<i class="material-icons left">email</i>Contact
+		</a></li>
+	</ul>
 
 	<main class="container color-primary z-depth-2">
-		<section class="section" id="activities">
-			<h4 class="header">projects</h4>
-
+		<section class="section" id="services">
 			<div class="row">
-				<div class="card-container col s1 m4">
-					<div class="card color-primary-light">
-						<div class="card-content">
-							<span class="card-title">Project 1</span>
-							<p>Fancy student page for activities, labs, and projects (recursion!)</p>
+				<div class="col s12 m4 l4">
+					<div class="small card color-secondary-dark">
+						<div class="card-image">
+							<img src="img/placeholder.jpg" />
+							<span class="card-title">rfid tracking</span>
 						</div>
-						<div class="card-action">
-							<a target="_blank" href="http://webtech.shitchell.com/projects/project1/">open</a>
+						<div class="card-content">
+							<p>Entrance sensors and RFID tags</p>
+							<div class="card-action">
+								<a data-target="modal-parking" class="modal-trigger" href="#">Learn More</a>
+							</div>
+						</div>
+						<div id="modal-parking" class="modal">
+							<div class="modal-content color-primary-light">
+								By doing stuff we can do stuff
+							</div>
 						</div>
 					</div>
 				</div>
+
+				<div class="col s12 m4 l4">
+					<div class="small card color-secondary-dark">
+						<div class="card-image">
+							<img src="img/placeholder.jpg" />
+							<span class="card-title">support</span>
+						</div>
+						<div class="card-content">
+							<p>We are here to answer questions and provide assistance.</p>
+							<div class="card-action">
+								<a data-target="modal-parking" class="modal-trigger" href="#">Learn More</a>
+							</div>
+						</div>
+						<div id="modal-parking" class="modal">
+							<div class="modal-content color-primary-light">
+								By doing stuff we can do stuff
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col s12 m4 l4">
+					<div class="small card color-secondary-dark">
+						<div class="card-image">
+							<img src="img/placeholder.jpg" />
+							<span class="card-title">warranty</span>
+						</div>
+						<div class="card-content">
+							<p>If you break it, we buy it.</p>
+							<div class="card-action">
+								<a data-target="modal-parking" class="modal-trigger" href="#">Learn More</a>
+							</div>
+						</div>
+						<div id="modal-parking" class="modal">
+							<div class="modal-content color-primary-light">
+								By doing stuff we can do stuff
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<div class="divider"></div>
+
+		<section class="section" id="services">
+			<h4 class="header">services</h4>
+
+			<p>We provide everything you need to get started at little financial risk to you. The NFCmaster package is provided through a rental agreement&em;there is no upfront cost.</p>
+
+			<p>We will do our best to ensure your satisfaction and work with you to provide a solution that fits your needs. But if at any point you decide that NFCmasters is not the solution you need, you may simply exit the agreement without worrying about losses from a large initial investment.</p>
+
+			<p>
+				Feel free to <a href="contact">contact us</a> for a quote and consultation!
+			</p>
 		</section>
 	</main>
 
-	<footer>
-		<span>Created by <a href="http://shitchell.com/">Shaun Mitchell</a> |
-		Released under <a href="//cdn.shitchell.com/txt/wtfpl.txt">wtfpl</a>
-	</footer>
+	<footer>NFCmasters &copy; 2020</footer>
 
 	<!-- particles.js lib and config -->
 	<script src="js/particles.js"></script>

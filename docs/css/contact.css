@@ -3,3 +3,9 @@
 #contact-form textarea {
 	color: #FFF;
 }
+
+#social i {
+	vertical-align: middle;
+	font-size: 1.5em;
+	margin: 0 1.5em;
+}

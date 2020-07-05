@@ -6,7 +6,7 @@
 
     <!-- Materialize -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
 
     <!-- JQuery -->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -73,58 +73,68 @@
         </a></li>
     </ul>
 
-    <main class="container color-primary z-depth-2">
-        <div class="row center">
-            <div class="col s12">
-                <h4 class="header">contact us</h4>
-                <p>what&#039;s on your mind?</p>
-            </div>
-
-            <form id="contact-form" action="https://api.shitchell.com/mail" class="col m8 offset-m2 s12">
-                <div class="row">
-                    <div class="input-field col s12 m6">
-                        <input id="contact-name" name="name" type="text" />
-                        <label for="contact-name">Name</label>
-                    </div>
-                    
-                    <div class="input-field col s12 m6">
-                        <input id="contact-email" name="from" type="email" class="validate" required />
-                        <label for="contact-email">Email *</label>
-<!--
-                        <span class="helper-text" data-error="invalid email"></span>
-                    -->
-                </div>
-
-                <div class="input-field col s12">
-                    <input id="contact-subject" name="subject" type="text" />
-                    <label for="contact-subject">Subject</label>
-                </div>
-
-                <div class="input-field col s12">
-                    <textarea id="contact-message" name="msg" class="materialize-textarea validate" required></textarea>
-                    <label for="contact-message">Message *</label>
-                </div>
-            </div>
-
+    <main class="container color-primary z-depth-2 center">
+        <section id="contact">
             <div class="row">
                 <div class="col s12">
-                    <button name="submit" class="waves-effect waves-light btn" type="submit">Send</a>
-                    </div>
+                    <h4 class="header">contact us</h4>
+                    <p>what&#039;s on your mind?</p>
                 </div>
 
-                <input type="hidden" id="contact-recipient" name="to" value="4" />
-                <input type="hidden" id="contact-url" name="url" value="nfcmasters.com" />
-            </form>
+                <form id="contact-form" action="https://api.shitchell.com/mail" class="col m8 offset-m2 s12">
+                    <div class="row">
+                        <div class="input-field col s12 m6">
+                            <input id="contact-name" name="name" type="text" />
+                            <label for="contact-name">Name</label>
+                        </div>
+
+                        <div class="input-field col s12 m6">
+                            <input id="contact-email" name="from" type="email" class="validate" required />
+                            <label for="contact-email">Email *</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <input id="contact-subject" name="subject" type="text" />
+                            <label for="contact-subject">Subject</label>
+                        </div>
+
+                        <div class="input-field col s12">
+                            <textarea id="contact-message" name="msg" class="materialize-textarea validate" required></textarea>
+                            <label for="contact-message">Message *</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col s12">
+                            <button name="submit" class="waves-effect waves-light btn" type="submit">Send</button>
+                        </div>
+                    </div>
+
+                    <input type="hidden" id="contact-recipient" name="to" value="4" />
+                    <input type="hidden" id="contact-url" name="url" value="nfcmasters.com" />
+                </form>
+            </div>
+            <script src="js/contact.js?8"></script>
+        </section>
+
+        <section id="social">
+            <p>You can also contact us these ways!</p>
+
+            <div class="row">
+                <a href="https://discord.gg/aTs9dM"><i class="fab fa-discord"></i></a>
+                <a class="rot13" target="_blank" data-href="znvygb:uryyb@aspznfgref.pbz"><i class="fas fa-envelope"></i></a>
+                <a href="tel:555-555-5555"><i class="fas fa-phone"></i></a>
+            </div>
         </div>
-        <script src="js/contact.js?8"></script>
-    </main>
+    </section>
+</main>
 
-    <footer>NFCmasters &copy; 2020</footer>
+<footer>NFCmasters &copy; 2020</footer>
 
-    <!-- particles.js lib and config -->
-    <script src="js/particles.js"></script>
-    <script src="js/config.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- particles.js lib and config -->
+<script src="js/particles.js"></script>
+<script src="js/config.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
 </body>
 </html>

@@ -26,6 +26,7 @@ $(document).ready(function() {
 	$('#skill-chips li').shuffle();
     $('.sidenav').sidenav({draggable: true});
     $('.modal').modal();
+    $('.collapsible').collapsible();
 //	$('#skill-chips').waypoint(function() {
 //		console.log("testing waypoint");
 //		showElementsWithDelay($('#skill-chips li'));
